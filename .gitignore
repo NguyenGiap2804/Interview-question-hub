@@ -1,0 +1,49 @@
+# ===========================
+# BACKEND – Spring Boot / Maven
+# ===========================
+backend/target/
+backend/.mvn/
+backend/**/*.class
+backend/**/*.jar
+backend/**/*.war
+backend/.idea/
+backend/*.iml
+backend/SKILL/
+
+# Sensitive config – KHÔNG push thông tin DB/password
+# Tạo file application-local.yml riêng trên máy cá nhân
+# backend/src/main/resources/application.yml  <-- GIỮ LẠI vì đã dùng env vars
+
+# ===========================
+# FRONTEND – React / Vite / Node
+# ===========================
+frontend/node_modules/
+frontend/dist/
+frontend/.idea/
+frontend/SKILL/
+
+# Build info & cache
+frontend/tsconfig.tsbuildinfo
+frontend/*.tsbuildinfo
+
+# Log files
+frontend/vite-dev.log
+frontend/vite-dev.err.log
+*.log
+
+# ===========================
+# IDE & OS
+# ===========================
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+.vscode/
+
+# ===========================
+# Environment files (NHẠY CẢM)
+# ===========================
+.env
+.env.local
+.env.*.local
+*.env

@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: interview-question-hub
+  datasource:
+    url: ${DB_URL:jdbc:sqlserver://localhost;instanceName=MSSQLSERVER01;databaseName=InterviewQuestionHub;encrypt=true;trustServerCertificate=true}
+    username: ${DB_USERNAME:sa}
+    password: ${DB_PASSWORD:sa123}
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServerDialect
+        format_sql: true
+
+app:
+  cors:
+    allowed-origins: http://localhost:3000,http://localhost:5173
